@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Digi_comp-rescue)(type Legacy)(uri ${KIPRJMOD}/Digi_comp-rescue.lib)(options "")(descr ""))
+)
