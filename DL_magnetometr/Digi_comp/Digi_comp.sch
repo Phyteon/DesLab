@@ -283,8 +283,6 @@ Wire Wire Line
 	4500 2650 4300 2650
 Text GLabel 2200 4900 2    50   UnSpc ~ 0
 BAT
-Wire Wire Line
-	6500 700  6300 700 
 $Comp
 L Digi_comp-rescue:AZ4558CM-Amplifier_Audio U4
 U 1 1 5FD834E8
@@ -379,7 +377,7 @@ Wire Wire Line
 	4050 2450 4050 2350
 Text GLabel 1600 4900 0    50   UnSpc ~ 0
 CHR
-Text GLabel 6300 700  0    50   UnSpc ~ 0
+Text GLabel 6000 700  0    50   UnSpc ~ 0
 CHR
 Text Notes 4050 800  0    50   ~ 0
 #TODO: maybe adjust output voltage slightly
@@ -405,13 +403,9 @@ F 3 "" H 6700 500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	6100 600  6100 1050
-Wire Notes Line
-	6100 1050 7400 1050
+	5800 600  5800 1050
 Wire Notes Line
 	7400 1050 7400 600 
-Wire Notes Line
-	7400 600  6150 600 
 Text Notes 6100 1150 0    50   ~ 0
 Battery connector
 Wire Wire Line
@@ -825,7 +819,6 @@ Wire Wire Line
 	6950 2550 6950 2500
 Text GLabel 7650 1500 2    50   UnSpc ~ 0
 3.3V
-Connection ~ 6950 1500
 Wire Wire Line
 	1450 2750 1100 2750
 Wire Wire Line
@@ -999,99 +992,6 @@ Wire Wire Line
 	7050 5100 6900 5100
 Wire Wire Line
 	6900 4700 7050 4700
-$Comp
-L Device:C C10
-U 1 1 5FDD7B44
-P 8200 5200
-F 0 "C10" V 7948 5200 50  0000 C CNN
-F 1 "100n" V 8039 5200 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 8238 5050 50  0001 C CNN
-F 3 "~" H 8200 5200 50  0001 C CNN
-	1    8200 5200
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR03
-U 1 1 5FDD8027
-P 8500 5200
-F 0 "#PWR03" H 8500 4950 50  0001 C CNN
-F 1 "GND" H 8505 5027 50  0000 C CNN
-F 2 "" H 8500 5200 50  0001 C CNN
-F 3 "" H 8500 5200 50  0001 C CNN
-	1    8500 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C9
-U 1 1 5FDD8471
-P 8200 4800
-F 0 "C9" V 7948 4800 50  0000 C CNN
-F 1 "100n" V 8039 4800 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 8238 4650 50  0001 C CNN
-F 3 "~" H 8200 4800 50  0001 C CNN
-	1    8200 4800
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5FDD87FC
-P 8500 4800
-F 0 "#PWR02" H 8500 4550 50  0001 C CNN
-F 1 "GND" H 8505 4627 50  0000 C CNN
-F 2 "" H 8500 4800 50  0001 C CNN
-F 3 "" H 8500 4800 50  0001 C CNN
-	1    8500 4800
-	1    0    0    -1  
-$EndComp
-Text GLabel 8000 5050 1    50   UnSpc ~ 0
-3.3V
-Text GLabel 7850 4650 1    50   UnSpc ~ 0
-3.3V
-$Comp
-L Device:C C8
-U 1 1 5FDDA27E
-P 8200 4400
-F 0 "C8" V 7948 4400 50  0000 C CNN
-F 1 "100n" V 8039 4400 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 8238 4250 50  0001 C CNN
-F 3 "~" H 8200 4400 50  0001 C CNN
-	1    8200 4400
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5FDDAA82
-P 8500 4400
-F 0 "#PWR01" H 8500 4150 50  0001 C CNN
-F 1 "GND" H 8505 4227 50  0000 C CNN
-F 2 "" H 8500 4400 50  0001 C CNN
-F 3 "" H 8500 4400 50  0001 C CNN
-	1    8500 4400
-	1    0    0    -1  
-$EndComp
-Text GLabel 7650 4300 1    50   UnSpc ~ 0
-3.3V
-Wire Wire Line
-	8350 4400 8500 4400
-Wire Wire Line
-	8350 4800 8500 4800
-Wire Wire Line
-	7650 4300 7650 4400
-Wire Wire Line
-	7850 4650 7850 4800
-Wire Wire Line
-	7650 4400 8050 4400
-Wire Wire Line
-	7850 4800 8050 4800
-Wire Wire Line
-	8050 5200 8000 5200
-Wire Wire Line
-	8000 5200 8000 5050
-Wire Wire Line
-	8000 5200 8000 5350
-Connection ~ 8000 5200
-Wire Wire Line
-	8350 5200 8500 5200
 Text GLabel 9300 6300 2    50   Output ~ 0
 ISP_TXD
 Text GLabel 9300 6200 2    50   Input ~ 0
@@ -1243,12 +1143,6 @@ Text GLabel 6250 7300 0    50   BiDi ~ 0
 D+
 Text GLabel 6250 7200 0    50   BiDi ~ 0
 D-
-Wire Wire Line
-	7850 5350 7850 4800
-Connection ~ 7850 4800
-Wire Wire Line
-	7650 5350 7650 4400
-Connection ~ 7650 4400
 Text Notes 8750 8700 0    50   ~ 0
 #ToDo: Antenna
 Text Notes 1450 5550 2    50   ~ 0
@@ -1304,9 +1198,6 @@ Wire Wire Line
 Wire Wire Line
 	7500 1500 7650 1500
 Wire Wire Line
-	6950 1500 7500 1500
-Connection ~ 7500 1500
-Wire Wire Line
 	5450 1500 5600 1500
 Wire Wire Line
 	5600 1650 5600 1500
@@ -1319,4 +1210,177 @@ Wire Notes Line
 	5250 1200 7950 1200
 Wire Notes Line
 	5250 2800 7950 2800
+$Comp
+L Device:Fuse_Small F?
+U 1 1 5FD84E19
+P 6150 700
+F 0 "F?" H 6150 600 50  0000 C CNN
+F 1 "Fuse_Small" H 6150 550 50  0000 C CNN
+F 2 "" H 6150 700 50  0001 C CNN
+F 3 "~" H 6150 700 50  0001 C CNN
+	1    6150 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 700  6500 700 
+Wire Wire Line
+	6050 700  6000 700 
+Wire Notes Line
+	5800 1050 7400 1050
+Wire Notes Line
+	5800 600  7400 600 
+$Comp
+L Device:Fuse_Small F?
+U 1 1 5FDB2E3B
+P 7250 1500
+F 0 "F?" H 7250 1700 50  0000 C CNN
+F 1 "Fuse_Small" H 7250 1600 50  0000 C CNN
+F 2 "" H 7250 1500 50  0001 C CNN
+F 3 "~" H 7250 1500 50  0001 C CNN
+	1    7250 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1500 7150 1500
+Connection ~ 6950 1500
+Wire Wire Line
+	7350 1500 7500 1500
+Connection ~ 7500 1500
+$Comp
+L Device:L L1
+U 1 1 5FDC3994
+P 6450 5350
+F 0 "L1" V 6640 5350 50  0000 C CNN
+F 1 "10u" V 6549 5350 50  0000 C CNN
+F 2 "" H 6450 5350 50  0001 C CNN
+F 3 "~" H 6450 5350 50  0001 C CNN
+	1    6450 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L2
+U 1 1 5FDC45C3
+P 6050 5350
+F 0 "L2" V 6240 5350 50  0000 C CNN
+F 1 "10n" V 6149 5350 50  0000 C CNN
+F 2 "" H 6050 5350 50  0001 C CNN
+F 3 "~" H 6050 5350 50  0001 C CNN
+	1    6050 5350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6650 5500 6650 5350
+Wire Wire Line
+	6650 5350 6600 5350
+Wire Wire Line
+	6300 5350 6200 5350
+Text GLabel 5850 5350 0    50   UnSpc ~ 0
+VCHIP
+Wire Wire Line
+	5900 5350 5850 5350
+Text GLabel 7650 4650 1    50   UnSpc ~ 0
+VCHIP
+$Comp
+L Device:C C?
+U 1 1 5FDDA059
+P 8300 4750
+F 0 "C?" V 8048 4750 50  0000 C CNN
+F 1 "100n" V 8139 4750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8338 4600 50  0001 C CNN
+F 3 "~" H 8300 4750 50  0001 C CNN
+	1    8300 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FDDAC74
+P 8300 5150
+F 0 "C?" V 8048 5150 50  0000 C CNN
+F 1 "100n" V 8139 5150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8338 5000 50  0001 C CNN
+F 3 "~" H 8300 5150 50  0001 C CNN
+	1    8300 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FDDB25A
+P 8300 4350
+F 0 "C?" V 8048 4350 50  0000 C CNN
+F 1 "100n" V 8139 4350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8338 4200 50  0001 C CNN
+F 3 "~" H 8300 4350 50  0001 C CNN
+	1    8300 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 4650 7650 4750
+Wire Wire Line
+	7650 4750 7800 4750
+Wire Wire Line
+	7800 4750 7800 4350
+Wire Wire Line
+	7800 4350 8150 4350
+Connection ~ 7650 4750
+Wire Wire Line
+	7650 4750 7650 5350
+Text GLabel 7850 4300 1    50   UnSpc ~ 0
+VCHIP
+Wire Wire Line
+	7850 4300 7850 4750
+Wire Wire Line
+	7850 4750 8150 4750
+Connection ~ 7850 4750
+Wire Wire Line
+	7850 4750 7850 5350
+Text GLabel 8000 4300 1    50   UnSpc ~ 0
+VCHIP
+Wire Wire Line
+	8000 4300 8000 5150
+Wire Wire Line
+	8150 5150 8000 5150
+Connection ~ 8000 5150
+Wire Wire Line
+	8000 5150 8000 5350
+$Comp
+L power:GND #PWR?
+U 1 1 5FE096DE
+P 8500 5150
+F 0 "#PWR?" H 8500 4900 50  0001 C CNN
+F 1 "GND" H 8505 4977 50  0000 C CNN
+F 2 "" H 8500 5150 50  0001 C CNN
+F 3 "" H 8500 5150 50  0001 C CNN
+	1    8500 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 5150 8450 5150
+$Comp
+L power:GND #PWR?
+U 1 1 5FE11A43
+P 8500 4750
+F 0 "#PWR?" H 8500 4500 50  0001 C CNN
+F 1 "GND" H 8505 4577 50  0000 C CNN
+F 2 "" H 8500 4750 50  0001 C CNN
+F 3 "" H 8500 4750 50  0001 C CNN
+	1    8500 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 4750 8450 4750
+$Comp
+L power:GND #PWR?
+U 1 1 5FE1A0CD
+P 8500 4350
+F 0 "#PWR?" H 8500 4100 50  0001 C CNN
+F 1 "GND" H 8505 4177 50  0000 C CNN
+F 2 "" H 8500 4350 50  0001 C CNN
+F 3 "" H 8500 4350 50  0001 C CNN
+	1    8500 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 4350 8450 4350
+Text Notes 7350 6650 0    50   ~ 0
+QN9080 chip version
 $EndSCHEMATC
