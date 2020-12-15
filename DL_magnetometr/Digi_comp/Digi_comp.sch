@@ -1460,4 +1460,6 @@ Wire Notes Line
 	500  1950 3100 1950
 Wire Notes Line
 	500  550  3100 550 
+Text Notes 500  2150 0    50   ~ 0
+#TODO: Connect analogue mass to digital mass via inductor
 $EndSCHEMATC
