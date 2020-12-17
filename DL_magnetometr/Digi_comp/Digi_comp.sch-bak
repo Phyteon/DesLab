@@ -1531,4 +1531,6 @@ F 3 "" H 4450 4950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4450 4950 4750 4950
+Text Notes 4600 4000 0    50   ~ 0
+#TODO: No info on how to connect chip to USB interface (to transfer code)
 $EndSCHEMATC
