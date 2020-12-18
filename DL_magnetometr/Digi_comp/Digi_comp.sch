@@ -1553,4 +1553,6 @@ Wire Notes Line
 	500  7850 500  5650
 Text Notes 500  8050 0    50   ~ 0
 Digital compass/small magnetic field sensor with I2C interface and\nautomatic interrupt generation.
+Text Notes 4650 2350 0    50   ~ 0
+#TODO: Change to Schottky diode
 $EndSCHEMATC
