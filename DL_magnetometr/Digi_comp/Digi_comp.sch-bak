@@ -1268,4 +1268,286 @@ Wire Notes Line
 	5750 2250 5750 2800
 Wire Notes Line
 	3350 2800 5750 2800
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-MU U?
+U 1 1 5FFF77EE
+P 8750 5100
+F 0 "U?" H 8700 5050 50  0000 C CNN
+F 1 "ATmega328P-MU" H 8700 5150 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm" H 8750 5100 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 8750 5100 50  0001 C CNN
+	1    8750 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 6700 8750 6600
+$Comp
+L power:GND #PWR?
+U 1 1 600084CF
+P 8750 6700
+F 0 "#PWR?" H 8750 6450 50  0001 C CNN
+F 1 "GND" H 8755 6527 50  0000 C CNN
+F 2 "" H 8750 6700 50  0001 C CNN
+F 3 "" H 8750 6700 50  0001 C CNN
+	1    8750 6700
+	1    0    0    -1  
+$EndComp
+Text GLabel 8750 3300 1    50   UnSpc ~ 0
+5V
+$Comp
+L Device:C C?
+U 1 1 6001938B
+P 8450 3500
+F 0 "C?" H 8335 3454 50  0000 R CNN
+F 1 "100n" H 8335 3545 50  0000 R CNN
+F 2 "" H 8488 3350 50  0001 C CNN
+F 3 "~" H 8450 3500 50  0001 C CNN
+	1    8450 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6001A392
+P 8150 3500
+F 0 "#PWR?" H 8150 3250 50  0001 C CNN
+F 1 "GND" H 8155 3327 50  0000 C CNN
+F 2 "" H 8150 3500 50  0001 C CNN
+F 3 "" H 8150 3500 50  0001 C CNN
+	1    8150 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8750 3300 8750 3500
+Connection ~ 8750 3500
+Wire Wire Line
+	8750 3500 8750 3600
+Wire Wire Line
+	8850 3600 8850 3500
+Wire Wire Line
+	8850 3500 8750 3500
+Wire Wire Line
+	8600 3500 8750 3500
+Wire Wire Line
+	8300 3500 8150 3500
+$Comp
+L Connector:Conn_01x06_Male J?
+U 1 1 60070624
+P 10800 5550
+F 0 "J?" H 10772 5432 50  0000 R CNN
+F 1 "Conn_01x06_Male" H 10772 5523 50  0000 R CNN
+F 2 "" H 10800 5550 50  0001 C CNN
+F 3 "~" H 10800 5550 50  0001 C CNN
+	1    10800 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60072062
+P 10500 5150
+F 0 "#PWR?" H 10500 4900 50  0001 C CNN
+F 1 "GND" H 10505 4977 50  0000 C CNN
+F 2 "" H 10500 5150 50  0001 C CNN
+F 3 "" H 10500 5150 50  0001 C CNN
+	1    10500 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10600 5250 10500 5250
+Wire Wire Line
+	10500 5250 10500 5150
+Wire Wire Line
+	9800 5350 9800 5400
+Wire Wire Line
+	9800 5400 9350 5400
+Text GLabel 10150 5650 0    50   UnSpc ~ 0
+5V
+Wire Wire Line
+	9950 5450 9950 4200
+Wire Wire Line
+	9950 4200 9350 4200
+Text GLabel 9450 4900 2    50   UnSpc ~ 0
+INT
+Wire Wire Line
+	9450 4900 9350 4900
+Text GLabel 2650 6700 2    50   UnSpc ~ 0
+INT
+Wire Wire Line
+	2650 6700 2500 6700
+Text Notes 2950 7150 1    50   ~ 0
+Interrupt trigger for CPU
+Text GLabel 800  6450 0    50   BiDi ~ 0
+SCL
+Text GLabel 800  6600 0    50   BiDi ~ 0
+SDA
+Text GLabel 9400 5300 2    50   BiDi ~ 0
+SCL
+Wire Wire Line
+	9400 5300 9350 5300
+Wire Wire Line
+	9750 4400 9750 5550
+Wire Wire Line
+	9350 4400 9750 4400
+Wire Wire Line
+	9850 4300 9850 5750
+Wire Wire Line
+	9850 5750 10600 5750
+Wire Wire Line
+	9350 4300 9850 4300
+Wire Wire Line
+	10150 5650 10600 5650
+Wire Wire Line
+	9750 5550 10600 5550
+Wire Wire Line
+	9950 5450 10600 5450
+Wire Wire Line
+	9800 5350 10600 5350
+Text GLabel 9400 5200 2    50   BiDi ~ 0
+SDA
+Wire Wire Line
+	9400 5200 9350 5200
+Text GLabel 9450 5700 2    50   UnSpc ~ 0
+UART_TXD
+Wire Wire Line
+	9450 5700 9350 5700
+Text GLabel 9450 5600 2    50   UnSpc ~ 0
+UART_RXD
+Wire Wire Line
+	9450 5600 9350 5600
+$Comp
+L Device:C C?
+U 1 1 6008913F
+P 800 6900
+F 0 "C?" H 915 6946 50  0000 L CNN
+F 1 "220n" H 915 6855 50  0000 L CNN
+F 2 "" H 838 6750 50  0001 C CNN
+F 3 "~" H 800 6900 50  0001 C CNN
+	1    800  6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  6750 1100 6750
+Wire Wire Line
+	1100 6750 1100 6800
+Wire Wire Line
+	1100 6800 1300 6800
+Wire Wire Line
+	800  7050 1100 7050
+Wire Wire Line
+	1100 7050 1100 6950
+Wire Wire Line
+	1100 6950 1300 6950
+Text GLabel 1700 5900 1    50   UnSpc ~ 0
+3.3V
+$Comp
+L Device:C C?
+U 1 1 6009E292
+P 1850 6000
+F 0 "C?" H 1965 6046 50  0000 L CNN
+F 1 "100n" H 1965 5955 50  0000 L CNN
+F 2 "" H 1888 5850 50  0001 C CNN
+F 3 "~" H 1850 6000 50  0001 C CNN
+	1    1850 6000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1700 6100 1700 6000
+Wire Wire Line
+	1700 5900 1700 6000
+Connection ~ 1700 6000
+$Comp
+L power:GND #PWR?
+U 1 1 600B414B
+P 2000 5900
+F 0 "#PWR?" H 2000 5650 50  0001 C CNN
+F 1 "GND" H 2005 5727 50  0000 C CNN
+F 2 "" H 2000 5900 50  0001 C CNN
+F 3 "" H 2000 5900 50  0001 C CNN
+	1    2000 5900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2000 6000 2000 5900
+Wire Wire Line
+	1500 6100 1500 6000
+$Comp
+L power:GND #PWR?
+U 1 1 600CAB00
+P 1200 6100
+F 0 "#PWR?" H 1200 5850 50  0001 C CNN
+F 1 "GND" H 1205 5927 50  0000 C CNN
+F 2 "" H 1200 6100 50  0001 C CNN
+F 3 "" H 1200 6100 50  0001 C CNN
+	1    1200 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 6100 1200 6000
+$Comp
+L Device:CP C?
+U 1 1 600D6749
+P 1350 6000
+F 0 "C?" V 1095 6000 50  0000 C CNN
+F 1 "4.7u" V 1186 6000 50  0000 C CNN
+F 2 "" H 1388 5850 50  0001 C CNN
+F 3 "~" H 1350 6000 50  0001 C CNN
+	1    1350 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 600D7AA2
+P 900 5850
+F 0 "R?" V 693 5850 50  0000 C CNN
+F 1 "2.2k" V 784 5850 50  0000 C CNN
+F 2 "" V 830 5850 50  0001 C CNN
+F 3 "~" H 900 5850 50  0001 C CNN
+	1    900  5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 600D8CF5
+P 1050 6200
+F 0 "R?" V 843 6200 50  0000 C CNN
+F 1 "2.2k" V 934 6200 50  0000 C CNN
+F 2 "" V 980 6200 50  0001 C CNN
+F 3 "~" H 1050 6200 50  0001 C CNN
+	1    1050 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 6350 1050 6600
+Wire Wire Line
+	1050 6600 1300 6600
+Wire Wire Line
+	1050 6600 800  6600
+Connection ~ 1050 6600
+Wire Wire Line
+	800  6450 900  6450
+Wire Wire Line
+	900  6000 900  6450
+Connection ~ 900  6450
+Wire Wire Line
+	900  6450 1300 6450
+Text GLabel 1050 6000 1    50   UnSpc ~ 0
+3.3V
+Wire Wire Line
+	1050 6050 1050 6000
+Text GLabel 1000 5700 2    50   UnSpc ~ 0
+3.3V
+Wire Wire Line
+	1000 5700 900  5700
+Text GLabel 2250 5900 1    50   UnSpc ~ 0
+3.3V
+Wire Wire Line
+	2250 5900 2250 6000
+Wire Wire Line
+	2250 6000 2100 6000
+Wire Wire Line
+	2100 6000 2100 6100
+Wire Wire Line
+	2250 6000 2300 6000
+Wire Wire Line
+	2300 6000 2300 6100
+Connection ~ 2250 6000
 $EndSCHEMATC
