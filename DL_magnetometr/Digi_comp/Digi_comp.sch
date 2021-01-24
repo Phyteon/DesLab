@@ -696,42 +696,40 @@ Text GLabel 5650 3000 1    50   UnSpc ~ 0
 3.3V
 Text GLabel 7250 3650 3    50   UnSpc ~ 0
 3.3V
-Text Notes 650  1300 0    50   ~ 0
+Text Notes 1450 1800 0    50   ~ 0
 Battery Connector
-Text Notes 650  1400 0    50   ~ 0
+Text Notes 1450 1900 0    50   ~ 0
 Battery: LS 14250 SAFT
-Text Notes 950  7900 0    50   ~ 0
-#ToDo: Check where to KEY and LED should be plugged\n
 Wire Notes Line
-	1650 600  1650 1200
+	2450 1100 2450 1700
 Text GLabel 6350 5400 2    50   UnSpc ~ 0
 UART_TXD
 Text GLabel 6350 5300 2    50   UnSpc ~ 0
 UART_RXD
 Wire Wire Line
-	1000 750  900  750 
-Text GLabel 900  750  0    50   UnSpc ~ 0
+	1800 1250 1700 1250
+Text GLabel 1700 1250 0    50   UnSpc ~ 0
 3.6V
 $Comp
 L power:GND #PWR01
 U 1 1 601C4065
-P 900 1050
-F 0 "#PWR01" H 900 800 50  0001 C CNN
-F 1 "GND" H 905 877 50  0000 C CNN
-F 2 "" H 900 1050 50  0001 C CNN
-F 3 "" H 900 1050 50  0001 C CNN
-	1    900  1050
+P 1700 1550
+F 0 "#PWR01" H 1700 1300 50  0001 C CNN
+F 1 "GND" H 1705 1377 50  0000 C CNN
+F 2 "" H 1700 1550 50  0001 C CNN
+F 3 "" H 1700 1550 50  0001 C CNN
+	1    1700 1550
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 60107D79
-P 1000 950
-F 0 "BT1" H 1118 1046 50  0000 L CNN
-F 1 "Battery_Cell" H 1118 955 50  0000 L CNN
-F 2 "Dokumenty:2AA-SM" V 1000 1010 50  0001 C CNN
-F 3 "~" V 1000 1010 50  0001 C CNN
-	1    1000 950 
+P 1800 1450
+F 0 "BT1" H 1918 1546 50  0000 L CNN
+F 1 "Battery_Cell" H 1918 1455 50  0000 L CNN
+F 2 "Dokumenty:2AA-SM" V 1800 1510 50  0001 C CNN
+F 3 "~" V 1800 1510 50  0001 C CNN
+	1    1800 1450
 	1    0    0    -1  
 $EndComp
 Text GLabel 2850 950  0    50   UnSpc ~ 0
@@ -742,13 +740,13 @@ Wire Wire Line
 Wire Notes Line
 	2600 650  2600 2250
 Wire Wire Line
-	900  1050 1000 1050
+	1700 1550 1800 1550
 Wire Notes Line
-	1650 600  650  600 
+	2450 1100 1450 1100
 Wire Notes Line
-	650  600  650  1200
+	1450 1100 1450 1700
 Wire Notes Line
-	1650 1200 650  1200
+	2450 1700 1450 1700
 $Comp
 L Connector:Conn_01x01_Male J3
 U 1 1 60155FF8
